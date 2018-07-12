@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title> Study Progress</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="~/assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="~/assets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <script src="~/assets/jquery-3.2.1.min.js"></script>
+  <script src="~/assets/bootstrap/js/bootstrap.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="/Frontend/src/app/UI/StudyProgress.component.css" rel="stylesheet">
+
+</head>
+<body>
+  <div>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              Thông tin cá nhân
+            </a>
+            <a class="navbar-brand" href="#">
+              Quá trình học tập
+            </a>
+            <a class="navbar-brand" href="#">
+              View
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class=" col-md-1 left-bar"></div>
+        <div class=" col-md-11 content">
+          <div class="row">
+            <div class="col-sm-6">
+              <h6>Họ và tên : {{StudentEntity.FullName}}</h6>
+              <h6 id="boxname">Thông tin học tập</h6>
+              <table class="table table-bordered">
+                <thead style="white-space: nowrap">
+                  <tr>
+                    <th>Học kì</th>
+                    <th>Điểm rèn luyện</th>
+                    <th>Điểm trung bình</th>
+                    <th>Điểm tích lũy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>{{StudentEntity.Gpa}}</td>
+                    <td>{{StudentEntity.Gpa}}</td>
+                    <td>{{StudentEntity.Gpa}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-6">
+              <h6>Lớp: {{StudentEntity.Class}}</h6>
+              <h6 id="boxname">Thông tin khen thưởng/Giải thưởng</h6>
+              <form>
+                <textarea cols="125" rows="10" name="prize" placeholder="Năm nhất được ABC"></textarea>
+              </form>
+            </div>
+            <div class="col-sm-6">
+              <h6 id="boxname">Kỉ Luật</h6>
+              <form>
+                <textarea cols="125" rows="10" name="discipline" placeholder="Năm nhất bị ABC"></textarea>
+              </form>
+            </div>
+            <div class="col-sm-6">
+              <h6 id="boxname">Đã đi nước ngoài</h6>
+              <form>
+                <textarea cols="125" rows="10" name="aboard" placeholder="Năm nhất đi Mỹ gặp Donald Trump"></textarea>
+              </form>
+            </div>
+            <div class="col-12 content">
+              <h6 id="boxname">Kỹ năng cá nhân</h6>
+              <table class="table table-bordered">
+                <thead style="white-space: nowrap">
+                  <tr>
+                    <th>Kỹ năng</th>
+                    <th>Mức độ</th>
+                    <th>Dự án</th>
+                    <th>Mô tả</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lập trình java</td>
+                    <td>Junior</td>
+                    <td>hello world</td>
+                    <td>123 123</td>
+                  </tr>
+                </tbody>
+              </table>
+              <center><button class="btn btn-primary" text-align="center" type="submit" (onClick)="Save()">Lưu thay đổi</button></center> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-primary footer">
+    <div>
+      <p>@2018 Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội </p>
+      <p>Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+      <p>Điện thoại: 024.37547.461; Fax: 024.37547.460; Email: uet@vnu.edu.vn</p>
+    </div>
+  </div>
+</body>
+</html>
+
+

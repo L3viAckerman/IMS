@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+  <!--CSS file ref-->
+  <link rel="stylesheet" type="text/css" media="screen" href="Student_managerment_finnal.css" />
+
+</head>
+
+<body style="background-color: rgb(245, 245, 240);">
+<!--Header-->
+
+<!--Navigator-->
+
+<!--Content-->
+<div class="container-fluid responsive row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+    <div class="shadow">
+                <span class="text-center" style="width: 100%; margin-top: 5px;">
+                    <h4>THÔNG TIN NGƯỜI ĐẠI DIỆN</h4>
+                </span>
+      <div class="row">
+        <div class="col-sm-3">
+            <img class="rounded-circle" src="https://pb2-production-herokuapp-com.global.ssl.fastly.net/default_avatar.png"
+               style="width: 100%; margin-left: 10px;">
+        </div>
+        <div class="col-sm-9 form-inline">
+          <h6 style="width: 30%;">Họ tên</h6>
+          <input type="text" class="form-control" style="width: 68%;margin-bottom: 5px;" [(ngModel)]="HREmployeeEntity.Name">
+          <h6 style="width: 30%">Chức vụ</h6>
+          <input type="text" class="form-control" style="width: 68%;margin-bottom: 5px;" [(ngModel)]="HREmployeeEntity.Display">
+          <h6 style="width: 55%;"></h6>
+          <a class="text-center btn btn-primary font-weight-bold" style="width: 43%; margin-bottom: 10px; font-size: 1rem;" (click)="SaveEntity(HREmployeeEntity)" href="/Home">LƯU THAY ĐỔI</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+<br>
+<br>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AppStart",
+    "\\bin",
+    "\\Frontend",
+    "\\Frontend\\src",
+    "\\Frontend\\src\\app",
+    "\\Frontend\\src\\app\\UI",
+    "\\Frontend\\src\\app\\UI\\Student",
+    "\\Frontend\\src\\app\\UI\\StudentProfile\\InternshipResult",
+    "\\Frontend\\src\\app\\UI\\Student\\Student_Intern_Report_Finnal",
+    "\\Frontend\\src\\app\\UI\\StudyProgress"
+  ],
+  "SelectedNode": "\\Frontend\\src\\app\\UI\\Student\\Student_Intern_Report_Finnal\\InternReportFinnal.component.html",
+  "PreviewInSolutionExplorer": false
+}

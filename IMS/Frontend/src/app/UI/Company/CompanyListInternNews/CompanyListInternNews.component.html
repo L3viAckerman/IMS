@@ -1,0 +1,20 @@
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th style="width: 8.33%">Title</th>
+      <th style="width: 75%">Content</th>
+      <th style="width: 16.66%">Tác vụ</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let Entity of Entities">
+      <th>{{Entity.Title}}</th>
+      <th>{{Entity.Content}}</th>
+      <th>
+        <a [routerLink]="['/Company',Entity?.Id]">Chi tiết</a>
+      </th>
+    </tr>
+    </tbody>
+  </table>
+</div>

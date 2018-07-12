@@ -1,0 +1,70 @@
+<div>
+  <div class="row">
+    <div class="caption">
+      <span>Danh sách Sinh viên</span>
+    </div>
+  </div>
+  <div class="row">
+    <table class="table table-bordered">
+      <thead style="white-space: nowrap">
+        <tr>
+          <th>STT</th>
+          <th>Full Name</th>
+          <th>Class</th>
+          <th>Department</th>
+          <th>Birthday</th>
+          <th>Vnumail</th>
+          <th>Operation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>
+            <input class="form-control" [(ngModel)]="SearchStudentEntity.FullName" type="text" placeholder="Search..." (keydown.enter)="Search(SearchStudentEntity)">
+          </td>
+          <td>
+            <input class="form-control" [(ngModel)]="SearchStudentEntity.Password" type="text" placeholder="Search..." (keydown.enter)="Search()">
+          </td>
+          <td>
+            <input class="form-control" [(ngModel)]="SearchStudentEntity.Role" type="text" placeholder="Search..." (keydown.enter)="Search()">
+          </td>
+          <td>
+            <input class="form-control" [(ngModel)]="SearchStudentEntity.Role" type="text" placeholder="Search..." (keydown.enter)="Search()">
+          </td>
+          <td>
+            <input class="form-control" [(ngModel)]="SearchStudentEntity.Role" type="text" placeholder="Search..." (keydown.enter)="Search()">
+          </td>
+          <td style="text-align: center">
+            <button type="button" class="btn btn-success btn-circle" (click)="Add({IsEdit:true})"><i class="fa fa-plus fa-1x" aria-hidden="true"></i></button>
+          </td>
+        </tr>
+        <tr *ngFor="let Student of (Entities ? Entities : []); let i = index">
+          <td>{{PagingModel.Take * PagingModel.Active + i + 1}}</td>
+          <td>{{Student?.FullName}}</td>
+          <td>{{Student?.Class}}</td>
+          <td>{{Student?.Department}}</td>
+          <td>{{Student?.Birthday}}</td>
+          <td>{{Student?.Vnumail}}</td>
+          <td style="text-align: center">
+            <a class="btn btn-info btn-circle" [routerLink]="['/StudentProfile',Student.Id]" >
+              <i class="fa fa-edit fa-1x" aria-hidden="true"></i>
+            </a>
+            <button type="button" class="btn btn-danger btn-circle delete"
+                    mwlConfirmationPopover [title]="'Bạn có muốn ?' + Trick"
+                    [confirmText]="'Xác nhận'"
+                    [cancelText]="'Hủy'"
+                    [appendToBody]="true"
+                    cancelButtonType="danger"
+                    [message]="'Bạn có chắc chắn xóa trường này?'"
+                    placement="left" (confirm)="Delete(Student)">
+              <i class="fa fa-trash fa-1x"
+                 aria-hidden="true"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-paging [PagingModel]="PagingModel" [dot]="true" (onChanges)="Search(true)"></app-paging>

@@ -1,0 +1,83 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/assets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <script src="~/assets/jquery-3.2.1.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+    <style>
+        .container {
+            color: darkblue;
+            text-align: left;
+        }
+        .mid-left {
+            color: white;
+            padding-left: 50px;
+            padding-top: 10px;
+            border: solid;
+        }
+        .mid-right{
+            padding-top: 10px;
+            color: white;
+            padding-right: 50px;
+            border: solid;
+        }
+        .footer {
+            color: white;
+            padding-left: 50px;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <h3>Hệ thống quản lý thực tập</h3>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+            <form class="form-signin" action="/Login" method="post">
+                <h2 class="h3 mb-3 font-weight-normal">ĐĂNG NHẬP: </h2>
+                <hr />
+                <label for="inputEmail" class="sr-only"> Tên đăng nhập </label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="MSSV" name="Username" required="" autofocus="">
+                <label for="inputPassword" class="sr-only"> Mật khẩu </label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="Password" required="">
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Lưu mật khẩu
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Đăng nhập</button>
+                <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-4 mid-right">     
+    </div>
+<section class="row bg-info footer">
+    <div>
+        <p>2018 Trường Đại học Công nghệ - Đại học Quốc gia Hà Nội </p>
+        <p>Địa chỉ: E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội</p>
+        <p>Điện thoại: 024.37547.461; Fax: 024.37547.460; Email: uet@vnu.edu.vn</p>
+    </div>
+</section>
+    
+
+
+</body>
+</html>

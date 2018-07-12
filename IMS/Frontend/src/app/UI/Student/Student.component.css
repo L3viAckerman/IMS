@@ -1,0 +1,45 @@
+﻿.users {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+.users td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.row-1 {
+  width: 3%;
+}
+.row-2 {
+  width: 15%;
+}
+.row-3 {
+  width: 12%;
+}
+.row-4 {
+  width: 10%;
+}
+.row-5 {
+  width: 8%;
+}
+.row-6 {
+  width: 8%;
+}
+.row-7 {
+  width: 8%;
+}
+.row-8 {
+  width: 8%;
+}
+.row-9 {
+  width: 15%;
+}
+.row-10 {
+  width: 15%;
+}
+.row-11 {
+  width: 8%;
+}

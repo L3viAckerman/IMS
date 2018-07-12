@@ -1,0 +1,11 @@
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\bin\Debug\netcoreapp2.0\IMS.deps.json
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\bin\Debug\netcoreapp2.0\IMS.runtimeconfig.json
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\bin\Debug\netcoreapp2.0\IMS.runtimeconfig.dev.json
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\bin\Debug\netcoreapp2.0\IMS.dll
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\bin\Debug\netcoreapp2.0\IMS.pdb
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\obj\Debug\netcoreapp2.0\IMS.csproj.CoreCompileInputs.cache
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\obj\Debug\netcoreapp2.0\IMS.AssemblyInfoInputs.cache
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\obj\Debug\netcoreapp2.0\IMS.AssemblyInfo.cs
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\obj\Debug\netcoreapp2.0\IMS.dll
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\obj\Debug\netcoreapp2.0\IMS.pdb
+C:\Users\LinhLPV\source\Workspaces\Workspace\IMSv2\IMS\obj\Debug\netcoreapp2.0\IMS.csprojResolveAssemblyReference.cache
